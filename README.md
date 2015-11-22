@@ -1,16 +1,16 @@
-CM11 Manifests
+Mokee Manifests
 ========================
-Project M4 / Project U0 / Project V1 / Project Vee3
+Project M4 / Project V1 / Project Vee3
 
-Local manifests to build Android KitKat 4.4 to L5, L7, L1II and L3II
+Local manifests to build Android KitKat 4.4 to L5, L1II and L3II
 
-To initialize CM11 Repo:
+To initialize Mokee Repo:
 
-    repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0 -g all,-notdefault,-darwin
+    repo init -u https://github.com/MoKee/android.git -b kk_mkt -g all,-notdefault,-darwin
 
 To initialize Repo's:
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/TeamVee/android_.repo_local_manifests/cm-11.0/local_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/TeamVee/android_.repo_local_manifests/kk_mkt/local_manifest.xml
 
 To sync:
 
@@ -26,16 +26,12 @@ To initialize the environment
 
 To build for L5:
 
-    brunch m4
-
-To build for L7:
-
-    brunch u0
+    . mk m4
 
 To build for L1 II:
 
-    brunch v1
+    . mk v1
 
 To build for L3 II:
 
-    brunch vee3
+    . mk vee3

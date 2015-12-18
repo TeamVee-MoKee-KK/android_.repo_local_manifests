@@ -20,10 +20,6 @@ To apply patchs:
 
      device/lge/vee-common/patches/apply.sh
 
-To initialize the environment
-
-    . build/envsetup.sh
-
 To build for L5:
 
     . mk m4

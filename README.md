@@ -6,7 +6,7 @@ Local manifests to build Android KitKat 4.4 to L5, L1II and L3II
 
 To initialize Mokee Repo:
 
-    repo init -u https://github.com/TeamVee/mokee_android.git -b kk_mkt -g all,-notdefault,-darwin
+    repo init -u https://github.com/MK-KK/android.git -b kk_mkt -g all,-notdefault,-darwin
 
 To initialize Repo's:
 

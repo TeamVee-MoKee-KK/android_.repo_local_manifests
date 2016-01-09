@@ -6,9 +6,6 @@
 	<!-- THLG Display CAF -->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
 	<project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" revision="cm-11.0" remote="thlg" />
-	<!-- CM Audio CAF -->
-	<remove-project name="MoKee/android_hardware_qcom_audio-caf" />
-	<project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" revision="cm-11.0" />
 	<!-- Team Vee TWRP -->
 	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="android-4.4" remote="tv" />
 	<!-- Vee Projects -->

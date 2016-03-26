@@ -7,14 +7,11 @@
 	<remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
 	<project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" revision="cm-11.0" remote="thlg" />
 	<!-- Team Vee TWRP -->
-	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="android-4.4" remote="tv" />
+	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="cm-11.0" remote="tv" />
 	<!-- Vee Projects -->
 	<project path="device/lge/vee-common" name="android_device_lge_vee-common" revision="kk_mkt" remote="tv" />
 	<project path="device/lge/v1" name="android_device_lge_v1" revision="kk_mkt" remote="tv" />
 	<project path="device/lge/vee3" name="android_device_lge_vee3" revision="kk_mkt" remote="tv" />
-	<!-- First Gen Projects -->
-	<project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="cm-11.0" remote="tv" />
-	<project path="device/lge/m4" name="android_device_lge_m4" revision="kk_mkt" remote="tv" />
 	<!-- Common Projects -->
 	<project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk" remote="thlg" />
 	<project path="vendor/lge" name="android_vendor_lge" revision="cm-11.0" remote="tv" />

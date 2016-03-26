@@ -1,8 +1,8 @@
-Mokee Manifests
+Mokee KK Manifests
 ========================
-Project M4 / Project V1 / Project Vee3
+Project V1 / Project Vee3
 
-Local manifests to build Android KitKat 4.4 to L5, L1II and L3II
+Local manifests to build Android KitKat 4.4 to L1II and L3II
 
 To initialize Mokee Repo:
 
@@ -10,7 +10,7 @@ To initialize Mokee Repo:
 
 To initialize Repo's:
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/TeamVee/android_.repo_local_manifests/kk_mkt/local_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/TeamVee-MoKee-KK/android_.repo_local_manifests/kk_mkt/local_manifest.xml
 
 To sync:
 
@@ -18,11 +18,7 @@ To sync:
 
 To apply patchs:
 
-     device/lge/vee-common/patches/apply.sh
-
-To build for L5:
-
-    . mk m4
+    device/lge/vee-common/patches/apply.sh
 
 To build for L1 II:
 

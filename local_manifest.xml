@@ -3,15 +3,16 @@
 	<!-- Remote names -->
 	<remote name="thlg" fetch="https://github.com/TeamHackLG/" />
 	<remote name="tv" fetch="https://github.com/TeamVee/" />
+	<remote name="tvmk" fetch="https://github.com/TeamVee-MoKee-KK/" />
 	<!-- THLG Display CAF -->
 	<remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
 	<project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" revision="cm-11.0" remote="thlg" />
 	<!-- Team Vee TWRP -->
 	<project path="bootable/recovery-omni" name="android_bootable_recovery" revision="cm-11.0" remote="tv" />
 	<!-- Vee Projects -->
-	<project path="device/lge/vee-common" name="android_device_lge_vee-common" revision="kk_mkt" remote="tv" />
-	<project path="device/lge/v1" name="android_device_lge_v1" revision="kk_mkt" remote="tv" />
-	<project path="device/lge/vee3" name="android_device_lge_vee3" revision="kk_mkt" remote="tv" />
+	<project path="device/lge/vee-common" name="android_device_lge_vee-common" revision="kk_mkt" remote="tvmk" />
+	<project path="device/lge/v1" name="android_device_lge_v1" revision="kk_mkt" remote="tvmk" />
+	<project path="device/lge/vee3" name="android_device_lge_vee3" revision="kk_mkt" remote="tvmk" />
 	<!-- Common Projects -->
 	<project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk" remote="thlg" />
 	<project path="vendor/lge" name="android_vendor_lge" revision="cm-11.0" remote="tv" />

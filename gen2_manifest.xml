@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- Remote names -->
+	<remote name="thlg" fetch="https://github.com/TeamHackLG/" />
+	<!-- Project Vee3 -->
+	<project path="device/lge/vee3" name="android_device_lge_vee3" revision="cm-11.0" remote="thlg" />
+	<!-- Project V1 -->
+	<project path="device/lge/v1" name="android_device_lge_v1" revision="cm-11.0" remote="thlg" />
+</manifest>

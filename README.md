@@ -1,29 +1,83 @@
-Mokee KK Manifests
-========================
-Project V1 / Project Vee3
+Manifest for Android KitKat / LineageOS 11.0
+====================================
+Project M4|L5 / Project U0|L7 / Project V1|L1II / Project Vee3|L3II
 
-Local manifests to build Android KitKat 4.4 to L1II and L3II
+---
 
-To initialize Mokee Repo:
+Automatic Way:
 
-    repo init -u https://github.com/MK-KK/android.git -b kk_mkt -g all,-notdefault,-darwin
+script to download manifests, sync repo and build:
 
-To initialize Repo's:
+    curl --create-dirs -L -o build.sh -O -L https://raw.github.com/TeamHackLG/local_manifest/cm-11.0/build.sh
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/TeamVee-MoKee-KK/android_.repo_local_manifests/kk_mkt/local_manifest.xml
+To use:
 
-To sync:
+    source build.sh
 
-    repo sync
+---
 
-To apply patchs:
+Manual Way:
 
-    device/lge/vee-common/patches/apply.sh
+To initialize LineageOS 11.0 Repo:
 
-To build for L1 II:
+    repo init -u https://github.com/LineageOS/android.git -b cm-11.0 -g all,-notdefault,-darwin
 
-    . mk v1
+---
 
-To build for L3 II:
+To initialize MSM7x27a Manifest for all devices:
 
-    . mk vee3
+    curl --create-dirs -L -o .repo/local_manifests/msm7x27a_manifest.xml -O -L https://raw.github.com/TeamHackLG/local_manifest/cm-11.0/msm7x27a_manifest.xml
+
+---
+
+To initialize Manifest for L5/L7:
+
+    curl --create-dirs -L -o .repo/local_manifests/gen1_manifest.xml -O -L https://raw.github.com/TeamHackLG/local_manifest/cm-11.0/gen1_manifest.xml
+
+---
+
+To initialize Manifest for L1II/L3II:
+
+    curl --create-dirs -L -o .repo/local_manifests/gen2_manifest.xml -O -L https://raw.github.com/TeamHackLG/local_manifest/cm-11.0/gen2_manifest.xml
+
+---
+
+# Never use 'L5/L7' Manifest with 'L1II/L3II' Manifest
+
+---
+
+Sync the repo:
+
+    repo sync -c --force-sync
+
+---
+
+Initialize the environment:
+
+    source build/envsetup.sh
+
+---
+
+To build for L5:
+
+    brunch e610
+
+---
+
+To build for L7:
+
+    brunch p700
+
+---
+
+To build for L1II:
+
+    sh device/lge/v1/patches/apply.sh
+    brunch v1
+
+---
+
+To build for L3II:
+
+    sh device/lge/vee3/patches/apply.sh
+    brunch vee3

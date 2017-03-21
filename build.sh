@@ -3,10 +3,10 @@
 _android="4.4.4"
 _android_version="KitKat"
 _android_java="7"
-_custom_android="cm-11.0"
-_custom_android_version="LineageOS11.0"
-_github_custom_android_place="LineageOS"
-_github_device_place="TeamHackLG"
+_custom_android="kk_mkt"
+_custom_android_version="MokeeKK"
+_github_custom_android_place="MK-KK"
+_github_device_place="TeamVee-MoKee-KK"
 # Make loop for usage of 'break' to recursive exit
 while true
 do
@@ -284,19 +284,19 @@ do
 	echo "  | Starting Android Building!"
 	if [ "${_device_build}" == "e610" ] || [ "${_device_build}" == "gen1" ]
 	then
-		_if_fail_break "brunch e610"
+		_if_fail_break ". mk e610"
 	fi
 	if [ "${_device_build}" == "p700" ] || [ "${_device_build}" == "gen1" ]
 	then
-		_if_fail_break "brunch p700"
+		_if_fail_break ". mk p700"
 	fi
 	if [ "${_device_build}" == "v1" ] || [ "${_device_build}" == "gen2" ]
 	then
-		_if_fail_break "brunch v1"
+		_if_fail_break ". mk v1"
 	fi
 	if [ "${_device_build}" == "vee3" ] || [ "${_device_build}" == "gen2" ]
 	then
-		_if_fail_break "brunch vee3"
+		_if_fail_break ". mk vee3"
 	fi
 
 	# Exit
